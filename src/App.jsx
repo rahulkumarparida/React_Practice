@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      {/* <h1>HELLO</h1>
+      <h1>HELLO</h1>
   <Counter />
   <Toggle />
   <User name={Uname} />
@@ -32,7 +32,7 @@ function App() {
       
       <div>
         <Temprature />
-      </div> */}
+      </div>
 
       <div>
         <Fruits />
