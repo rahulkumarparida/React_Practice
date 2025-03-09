@@ -4,16 +4,20 @@ import { useState } from "react";
 
 export default function Profile() {
   let [UserInfo, setUserInfo] = useState({ Name: "", age: "", email: "" });
-  let [disp , setDisp] = useState({ Name: "Jhon Doe", age: "69", email: "jhondoe69@gmail.com" })
+  let [disp, setDisp] = useState({
+    Name: "Jhon Doe",
+    age: "69",
+    email: "jhondoe69@gmail.com",
+  });
 
-  function handleSumbit(e){
-    setDisp(UserInfo)
-    setUserInfo({ Name: "", age: "", email: "" })
+  function handleSumbit(e) {
+    setDisp(UserInfo);
+    setUserInfo({ Name: "", age: "", email: "" });
     e.preventDefault();
   }
   return (
     <>
-    <h1>Input to Update the displayed Values</h1>
+      <h1>Input to Update the displayed Values</h1>
       <form action="" onSubmit={handleSumbit}>
         <input
           type="text"
@@ -51,7 +55,7 @@ export default function Profile() {
           required
         />{" "}
         <br />
-        <button type="Sumbit" >Sumbit</button>
+        <button type="Sumbit">Sumbit</button>
       </form>
 
       <div>

@@ -16,7 +16,7 @@ export default function Form() {
 
     e.preventDefault();
   }
- 
+
   return (
     <>
       <form onSubmit={HandleSumbit}>
@@ -46,7 +46,11 @@ export default function Form() {
       <p>Your Name is : {dispUser.user}</p>
       <p>Your Email is : {dispUser.email}</p>
       <Drill name={dispUser.user} />
-      <StatusMessage Status={dispUser.user=="" || dispUser.email==""?"ERROR" : "SUCCESS"} />
+      <StatusMessage
+        Status={
+          dispUser.user == "" || dispUser.email == "" ? "ERROR" : "SUCCESS"
+        }
+      />
     </>
   );
 }

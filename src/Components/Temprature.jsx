@@ -6,25 +6,24 @@ export default function Temprature() {
   let [temp, setTemp] = useState("");
   let [StoredData, setStoredData] = useState("");
   function getData(e) {
-    setStoredData(temp)
-    setTemp("")
+    setStoredData(temp);
+    setTemp("");
     e.preventDefault();
   }
   function CelciusToFahrenheit(e) {
-    let tempp = StoredData
-     
-    tempp = (tempp * 9/5)+32
-    setStoredData(tempp)
+    let tempp = StoredData;
+
+    tempp = (tempp * 9) / 5 + 32;
+    setStoredData(tempp);
 
     e.preventDefault();
   }
 
   function CelciusToKelvin(e) {
-    let deg = StoredData
-    deg = (Number(deg) + 273)
-   
-    
-    setStoredData(deg)
+    let deg = StoredData;
+    deg = Number(deg) + 273;
+
+    setStoredData(deg);
     e.preventDefault();
   }
 

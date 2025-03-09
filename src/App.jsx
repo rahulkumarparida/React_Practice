@@ -7,7 +7,7 @@ import Form from "./Components/Form";
 import Profile from "./Components/Profile";
 import Temprature from "./Components/Temprature";
 import Fruits from "./Components/Fruits";
-import Content from "./Components/Content"
+import Content from "./Components/Content";
 function App() {
   let [Uname, setName] = useState("Guest");
   function UserName() {
@@ -18,10 +18,10 @@ function App() {
   return (
     <>
       <h1>HELLO</h1>
-  <Counter />
-  <Toggle />
-  <User name={Uname} />
-  <button onClick={UserName}>Click to Add Name</button>
+      <Counter />
+      <Toggle />
+      <User name={Uname} />
+      <button onClick={UserName}>Click to Add Name</button>
 
       <div>
         <Form />
@@ -29,7 +29,7 @@ function App() {
       <div>
         <Profile />
       </div>
-      
+
       <div>
         <Temprature />
       </div>
@@ -37,7 +37,6 @@ function App() {
       <div>
         <Fruits />
       </div>
-
 
       <div>
         <Content />

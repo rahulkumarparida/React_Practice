@@ -4,14 +4,13 @@ import "./Content.css";
 export default function Content() {
   let [input, setInput] = useState("");
   let [task, setTask] = useState([]);
-  let [btn_txt , setBtn_txt] = useState("Revert")
+  let [btn_txt, setBtn_txt] = useState("Revert");
   function handleSumbit(e) {
     setTask([...task, input]);
     setInput("");
     e.preventDefault();
   }
 
-  
   function Comp(e) {
     let idc = e.target.getAttribute("id");
     console.log(idc);
@@ -20,37 +19,32 @@ export default function Content() {
     if (btn_txt == "Completed") {
       e.target.parentNode.style.opacity = 1;
       e.target.parentNode.style.color = "";
-      e.target.innerText =btn_txt ;
-      setBtn_txt("Revert")
-     
+      e.target.innerText = btn_txt;
+      setBtn_txt("Revert");
     } else {
       e.target.parentNode.style.opacity = 0.7;
       e.target.parentNode.style.color = "red";
       e.target.innerText = btn_txt;
-      setBtn_txt("Completed")
+      setBtn_txt("Completed");
       setTimeout(() => {
-        alert("If Completed Delete the Task or Revert to REDO it")
+        alert("If Completed Delete the Task or Revert to REDO it");
       }, 300);
-      
-
     }
-   
   }
 
   function remove(e) {
     let idm = e.target.getAttribute("id");
-    let Complete = document.getElementsByClassName("Complete")
+    let Complete = document.getElementsByClassName("Complete");
     console.log(Complete);
-    
+
     setTask(
       task.filter((ele, idx) => {
         return idx != idm;
-      }) 
+      })
     );
-    
+
     e.preventDefault();
   }
-
 
   return (
     <>

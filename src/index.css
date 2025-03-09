@@ -1,34 +1,34 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+body {
   display: flex;
   justify-content: center;
   background-color: gray;
   margin-bottom: 100px;
 }
-button{
+button {
   height: 50px;
   width: 150px;
   border-radius: 10px;
 }
-input{
+input {
   height: 40px;
   padding: 10px;
   margin: 20px;
 }
-p{
+p {
   font-size: xx-large;
 }
-.btn_fruits{
+.btn_fruits {
   height: 30px;
-  width: 100px
+  width: 100px;
 }
-h1{
+h1 {
   padding: 5px;
   transition: all ease 0.3s;
 }
-h1:hover{
+h1:hover {
   border: 2px solid aqua;
 }
