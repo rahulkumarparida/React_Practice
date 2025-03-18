@@ -9,6 +9,7 @@ export default function User({ name }) {
   return (
     <>
       <br />{" "}
+      <h1>Hello ji</h1>
       <input
         type="text"
         placeholder="Enter age"

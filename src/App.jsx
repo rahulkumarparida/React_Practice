@@ -18,24 +18,24 @@ function App() {
   return (
     <>
       <h1>HELLO</h1>
-      <Counter />
+      {/* <Counter />
       <Toggle />
       <User name={Uname} />
-      <button onClick={UserName}>Click to Add Name</button>
+      <button onClick={UserName}>Click to Add Name</button> */}
 
       <div>
-        <Form />
+        {/* <Form /> */}
       </div>
       <div>
-        <Profile />
-      </div>
-
-      <div>
-        <Temprature />
+        {/* <Profile /> */}
       </div>
 
       <div>
-        <Fruits />
+        {/* <Temprature /> */}
+      </div>
+
+      <div>
+        {/* <Fruits /> */}
       </div>
 
       <div>
